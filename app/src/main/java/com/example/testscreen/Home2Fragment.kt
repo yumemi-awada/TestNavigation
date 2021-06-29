@@ -49,6 +49,11 @@ class Home2Fragment : Fragment() {
             // https://qiita.com/links_2_3_4/items/3d1908ba0472da5ee734
         }
 
+        root.findViewById<View>(R.id.button_open2).setOnClickListener {
+            findNavController().navigate(Home2FragmentDirections.actionHome2FragmentToHomeFragment(100))
+
+        }
+
         return root
     }
 }
